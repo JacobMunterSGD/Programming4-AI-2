@@ -221,8 +221,8 @@ Transform:
   m_GameObject: {fileID: 97820442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -1.77, z: 46.7}
-  m_LocalScale: {x: 10, y: 1, z: 100}
+  m_LocalPosition: {x: -10, y: -1.77, z: 418.9}
+  m_LocalScale: {x: 10, y: 1, z: 847.41003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -512,8 +512,8 @@ Transform:
   m_GameObject: {fileID: 1309757861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.77, z: 46.7}
-  m_LocalScale: {x: 10, y: 1, z: 100}
+  m_LocalPosition: {x: 0, y: -1.77, z: 418.9}
+  m_LocalScale: {x: 10, y: 1, z: 847.41003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -617,8 +617,8 @@ Transform:
   m_GameObject: {fileID: 1751501932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: -1.77, z: 46.7}
-  m_LocalScale: {x: 10, y: 1, z: 100}
+  m_LocalPosition: {x: 10, y: -1.77, z: 418.9}
+  m_LocalScale: {x: 10, y: 1, z: 847.41003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -658,15 +658,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"moveSpeed":{"_value":5.0,"_name":"moveSpeed","_id":"47701539-dae2-4f56-af6c-93bbaaefebfe","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"moveSpeed":{"_value":20.0,"_name":"moveSpeed","_id":"47701539-dae2-4f56-af6c-93bbaaefebfe","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"increaseSpeedBy":{"_value":1.0,"_name":"increaseSpeedBy","_id":"e1aba707-fdc8-4825-b5de-3d4b5311753c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"middleLaneXPos":{"_name":"middleLaneXPos","_id":"c2e162bb-69d0-4a2f-bb48-0ff48f6710a4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"RightLaneXPos":{"_value":10.0,"_name":"RightLaneXPos","_id":"9720959c-4f88-4e30-bc90-f3eab776e40b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"LeftLaneYPos":{"_value":-10.0,"_name":"LeftLaneYPos","_id":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"LeftLaneXPos":{"_value":-10.0,"_name":"LeftLaneXPos","_id":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
-  - _json: '{"_value":5.0,"_name":"moveSpeed","_id":"47701539-dae2-4f56-af6c-93bbaaefebfe","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":20.0,"_name":"moveSpeed","_id":"47701539-dae2-4f56-af6c-93bbaaefebfe","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":1.0,"_name":"increaseSpeedBy","_id":"e1aba707-fdc8-4825-b5de-3d4b5311753c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -678,7 +678,7 @@ MonoBehaviour:
   - _json: '{"_value":10.0,"_name":"RightLaneXPos","_id":"9720959c-4f88-4e30-bc90-f3eab776e40b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":-10.0,"_name":"LeftLaneYPos","_id":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":-10.0,"_name":"LeftLaneXPos","_id":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &2045781675
@@ -694,13 +694,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"MiddleLaneRun","_position":{"x":370.0,"y":260.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"LeftLaneRun","_position":{"x":108.0,"y":151.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"RightLaneRun","_position":{"x":682.0,"y":160.0},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"increaseSpeedBy":{"_name":"increaseSpeedBy","_targetVariableID":"e1aba707-fdc8-4825-b5de-3d4b5311753c"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"MiddleLaneRun","_position":{"x":320.0,"y":188.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"targetLaneXPos":{"_name":"LeftLaneXPos","_targetVariableID":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.SwitchLane"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"FromMidToLeft","_position":{"x":139.0,"y":81.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"increaseSpeedBy":{"_name":"increaseSpeedBy","_targetVariableID":"e1aba707-fdc8-4825-b5de-3d4b5311753c"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"LeftLaneRun","_position":{"x":-31.0,"y":200.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"targetLaneXPos":{"_name":"middleLaneXPos","_targetVariableID":"c2e162bb-69d0-4a2f-bb48-0ff48f6710a4"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.SwitchLane"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"FromLeftToMid","_position":{"x":139.0,"y":305.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_actionList":{"executionMode":1,"actions":[{"targetLaneXPos":{"_name":"RightLaneXPos","_targetVariableID":"9720959c-4f88-4e30-bc90-f3eab776e40b"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.SwitchLane"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"FromMidToRight","_position":{"x":459.0,"y":80.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"4"},{"_actionList":{"executionMode":1,"actions":[{"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"increaseSpeedBy":{"_name":"increaseSpeedBy","_targetVariableID":"e1aba707-fdc8-4825-b5de-3d4b5311753c"},"$type":"NodeCanvas.Tasks.Actions.RunFowards"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"RightLaneRun","_position":{"x":678.0,"y":169.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[{"targetLaneXPos":{"_name":"middleLaneXPos","_targetVariableID":"c2e162bb-69d0-4a2f-bb48-0ff48f6710a4"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"$type":"NodeCanvas.Tasks.Actions.SwitchLane"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"FromRightToMid","_position":{"x":515.0,"y":295.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"6"}],"connections":[{"_condition":{"LeftOrRight":{"_value":"Left"},"$type":"NodeCanvas.Tasks.Conditions.PlayerInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"LeftOrRight":{"_value":"Right"},"$type":"NodeCanvas.Tasks.Conditions.PlayerInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetLaneXPos":{"_name":"LeftLaneXPos","_targetVariableID":"964d8efa-6e23-42bb-a1fa-784afd6d0ed1"},"$type":"NodeCanvas.Tasks.Conditions.ReachedLane"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"LeftOrRight":{"_value":"Right"},"$type":"NodeCanvas.Tasks.Conditions.PlayerInput"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetLaneXPos":{"_name":"middleLaneXPos","_targetVariableID":"c2e162bb-69d0-4a2f-bb48-0ff48f6710a4"},"$type":"NodeCanvas.Tasks.Conditions.ReachedLane"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetLaneXPos":{"_name":"RightLaneXPos","_targetVariableID":"9720959c-4f88-4e30-bc90-f3eab776e40b"},"$type":"NodeCanvas.Tasks.Conditions.ReachedLane"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"LeftOrRight":{"_value":"Left"},"$type":"NodeCanvas.Tasks.Conditions.PlayerInput"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetLaneXPos":{"_name":"middleLaneXPos","_targetVariableID":"c2e162bb-69d0-4a2f-bb48-0ff48f6710a4"},"$type":"NodeCanvas.Tasks.Conditions.ReachedLane"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences: []
   _boundGraphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 253, y: 80}
+    _translation: {x: 226, y: 182}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0

@@ -7,7 +7,8 @@ namespace NodeCanvas.Tasks.Actions {
 	public class RunFowards : ActionTask {
 
 		public BBParameter<float> moveSpeed;
-		CharacterController cc;
+        public BBParameter<float> increaseSpeedBy;
+        CharacterController cc;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -28,7 +29,9 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnUpdate() {
             
             cc.Move(agent.transform.forward * moveSpeed.value * Time.deltaTime);
-		}
+			moveSpeed.value += increaseSpeedBy.value * Time.deltaTime;
+
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
