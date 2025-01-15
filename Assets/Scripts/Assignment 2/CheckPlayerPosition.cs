@@ -1,13 +1,13 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
-using ParadoxNotion.Serialization.FullSerializer;
 using UnityEngine;
 
 namespace NodeCanvas.Tasks.Conditions {
 
-	public class PlayerInput : ConditionTask {
+	public class CheckPlayerPosition : ConditionTask {
 
-		public BBParameter<string> LeftOrRight;
+		public BBParameter<GameObject> player;
+		public BBParameter<float> currentSpawnZPos;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -29,19 +29,9 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-			if (LeftOrRight.value == "Left" && Input.GetKey(KeyCode.LeftArrow))
-			{
-                return true;
-            }
-            else if (LeftOrRight.value == "Right" && Input.GetKey(KeyCode.RightArrow))
-            {
-                return true;
-            }
-
+			if (player.value.transform.position.z > currentSpawnZPos.value - 100) return true;
 			else return false;
 
-
-
         }
-	}
+    }
 }
