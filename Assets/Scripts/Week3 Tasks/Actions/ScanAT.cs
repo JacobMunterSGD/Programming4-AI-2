@@ -8,21 +8,51 @@ namespace NodeCanvas.Tasks.Actions {
 		public Color scanColour;
 		public int numberOfScanCirclePoints;
 
-		//Use for initialization. This is called only once in the lifetime of the task.
-		//Return null if init was successfull. Return an error string otherwise
+		public float initialScanRadius;
+		public float scanDuration;
+
+		public BBParameter<float> currentScanRadius;
+		public BBParameter<LayerMask> targetMask;
+		public BBParameter<bool> hasTarget;
+		public BBParameter<Transform> targetTransform;
+
+		float timeScanning;
+
 		protected override string OnInit() {
+
+			currentScanRadius.value = initialScanRadius;
+
 			return null;
 		}
 
-		//This is called once each time the task is enabled.
-		//Call EndAction() to mark the action as finished, either in success or failure.
-		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-		}
 
-		//Called once per frame while the action is active.
+			timeScanning = 0;
+
+        }
+
 		protected override void OnUpdate() {
-			
+
+			DrawCircle(agent.transform.position, currentScanRadius.value, scanColour, numberOfScanCirclePoints);
+
+			timeScanning += Time.deltaTime;
+			if (timeScanning > scanDuration)
+			{
+				Collider[] colliders = Physics.OverlapSphere(agent.transform.position, currentScanRadius.value, targetMask.value);
+				foreach (Collider collider in colliders)
+				{
+					Blackboard blackboard = collider.GetComponent<Blackboard>();
+					float currentRepairValue = blackboard.GetVariableValue<float>("repairValue");
+
+					if (currentRepairValue == 0)
+					{
+						targetTransform.value = blackboard.GetVariableValue<Transform>("workpad");
+						hasTarget.value = true;
+					}
+				}
+                EndAction(true);
+            }
+
 		}
 
 		private void DrawCircle(Vector3 center, float radius, Color colour, int numberOfPoints)
@@ -36,17 +66,13 @@ namespace NodeCanvas.Tasks.Actions {
 				endPoint = new Vector3(Mathf.Cos(Mathf.Deg2Rad * anglePerPoint * i), 0, Mathf.Sin(Mathf.Deg2Rad * anglePerPoint * i));
 				endPoint = center + endPoint * radius;
 				Debug.DrawLine(startPoint, endPoint, colour);
-			}
-
-			
+			}			
 		}
 
-		//Called when the task is disabled.
 		protected override void OnStop() {
 			
 		}
 
-		//Called when the task is paused.
 		protected override void OnPause() {
 			
 		}
