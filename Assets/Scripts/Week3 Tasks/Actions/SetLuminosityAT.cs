@@ -7,11 +7,16 @@ namespace NodeCanvas.Tasks.Actions {
 	public class SetLuminosityAT : ActionTask {
 
 		public BBParameter<Light> light;
+		public BBParameter<Transform> workpad;
 		public float luminosityLevel;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit() {
+
+			light.value = agent.GetComponentInChildren<Light>();
+			workpad.value = agent.transform.Find("Work Pad");
+
 			return null;
 		}
 
