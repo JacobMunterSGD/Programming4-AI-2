@@ -8,10 +8,10 @@ namespace NodeCanvas.Tasks.Actions {
 		public Color scanColour;
 		public int numberOfScanCirclePoints;
 
-		public float initialScanRadius;
 		public float scanDuration;
 
-		public BBParameter<float> currentScanRadius;
+        public BBParameter<float> initialScanRadius;
+        public BBParameter<float> currentScanRadius;
 		public BBParameter<LayerMask> targetMask;
 		public BBParameter<bool> hasTarget;
 		public BBParameter<Transform> targetTransform;
@@ -20,14 +20,13 @@ namespace NodeCanvas.Tasks.Actions {
 
 		protected override string OnInit() {
 
-			currentScanRadius.value = initialScanRadius;
-
-			return null;
+            currentScanRadius.value = initialScanRadius.value;
+            return null;
 		}
 
 		protected override void OnExecute() {
 
-			timeScanning = 0;
+            timeScanning = 0;
 
         }
 
