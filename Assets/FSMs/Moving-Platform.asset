@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Moving-Platform
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waypoints":{"_name":"waypoints","_targetVariableID":"0662d602-e9d3-4f64-9168-3d35cd8011be"},"currentWaypoint":{"_name":"currentWaypoint","_targetVariableID":"afa81a69-b8f9-4d29-b3e9-cd837e2496fb"},"$type":"NodeCanvas.Tasks.Actions.SetupMovingPlatform"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Setup
+    Moving Platform","_position":{"x":619.0,"y":223.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"currentTarget","_targetVariableID":"3ed35882-a9e2-400f-9351-ba53d43e4a39"},"speed":{"_name":"moveSpeed","_targetVariableID":"b2635710-543e-4ecb-9175-092f4116ac2c"},"stopDistance":{"_value":0.1},"waitActionFinish":true,"$type":"NodeCanvas.Tasks.Actions.MoveTowards"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":861.0,"y":400.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"moveSpeed":{"_value":15.0,"_name":"moveSpeed","_id":"b2635710-543e-4ecb-9175-092f4116ac2c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: -90, y: -14}
+    _zoomFactor: 1
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}

@@ -8,6 +8,7 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class PlayerInput : ConditionTask {
 
 		public BBParameter<string> LeftOrRight;
+		public BBParameter<KeyCode> keyPressed;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -37,6 +38,10 @@ namespace NodeCanvas.Tasks.Conditions {
             {
                 return true;
             }
+			else if (keyPressed.value == KeyCode.Space && Input.GetKeyDown(KeyCode.Space))
+			{
+				return true;
+			}
 
 			else return false;
 
