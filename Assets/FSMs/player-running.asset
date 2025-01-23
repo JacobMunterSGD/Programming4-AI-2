@@ -18,7 +18,7 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 97, y: 8}
-    _zoomFactor: 0.68135816
+    _translation: {x: 50, y: -10}
+    _zoomFactor: 0.5485573
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}
