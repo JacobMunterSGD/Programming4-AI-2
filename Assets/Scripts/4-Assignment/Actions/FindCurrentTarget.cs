@@ -29,6 +29,7 @@ namespace NodeCanvas.Tasks.Actions {
             if (currentGoal.value == "Eat") FindGoal("Food");
             if (currentGoal.value == "Drink") FindGoal("Water");
             if (currentGoal.value == "Rest") FindGoal("Rest");
+			if (currentGoal.value == "Fight") FindAgressor();
 
             EndAction(true);
         }
@@ -58,8 +59,11 @@ namespace NodeCanvas.Tasks.Actions {
 			{
                 currentTarget.value = closestFoodSource.transform;
             }
-
-			
+        }
+		void FindAgressor()
+		{
+			// find the thing that attacked the agent (for now it's only be the player)
+            currentTarget.value = GameObject.FindGameObjectWithTag("Player").transform;
 
         }
 

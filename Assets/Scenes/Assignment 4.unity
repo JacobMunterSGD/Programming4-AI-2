@@ -667,7 +667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500157172}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.5, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -675,7 +675,7 @@ Transform:
   - {fileID: 63181526}
   - {fileID: 23011263}
   - {fileID: 1468581251}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1277911907}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837964909
 GameObject:
@@ -813,6 +813,141 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &889350651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889350655}
+  - component: {fileID: 889350654}
+  - component: {fileID: 889350653}
+  - component: {fileID: 889350652}
+  - component: {fileID: 889350656}
+  - component: {fileID: 889350657}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &889350652
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &889350653
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &889350654
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &889350655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.67, y: 1, z: -6.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889350656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94620bb5c4a7cfa45a7fc0ec456e15ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &889350657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889350651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4c043debc26d140affcf7e2d8bae59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  startHealth: 5
 --- !u!1 &1044797797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,25 +1154,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"hunger":{"_value":10.0,"_name":"hunger","_id":"456e864d-c919-44d6-ba5d-2b21a0d4bbce","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":25.0,"_name":"thirst","_id":"03dc588c-193e-4b61-886e-2bde1f6efacd","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"tiredness":{"_value":100.0,"_name":"tiredness","_id":"b5d33e4e-a840-419a-861c-b0f736f65db8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"angriness":{"_value":10.0,"_name":"angriness","_id":"c3829671-7611-4a32-a68e-3c60cbcbde20","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"hunger":{"_value":80.0,"_name":"hunger","_id":"456e864d-c919-44d6-ba5d-2b21a0d4bbce","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":80.0,"_name":"thirst","_id":"03dc588c-193e-4b61-886e-2bde1f6efacd","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"tiredness":{"_value":80.0,"_name":"tiredness","_id":"b5d33e4e-a840-419a-861c-b0f736f65db8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"angriness":{"_value":40.0,"_name":"angriness","_id":"c3829671-7611-4a32-a68e-3c60cbcbde20","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"currentGoal":{"_value":"null","_name":"currentGoal","_id":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231","$type":"NodeCanvas.Framework.Variable`1[[System.String,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"currentTarget":{"_name":"currentTarget","_id":"d5c4bf61-7619-4f39-b621-390c044f95a4","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"punchDamage":{"_value":1.0,"_name":"punchDamage","_id":"a8b5ddcf-e6e1-451d-ad05-44fea312253f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
-  - _json: '{"_value":10.0,"_name":"hunger","_id":"456e864d-c919-44d6-ba5d-2b21a0d4bbce","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":80.0,"_name":"hunger","_id":"456e864d-c919-44d6-ba5d-2b21a0d4bbce","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":25.0,"_name":"thirst","_id":"03dc588c-193e-4b61-886e-2bde1f6efacd","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":80.0,"_name":"thirst","_id":"03dc588c-193e-4b61-886e-2bde1f6efacd","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":100.0,"_name":"tiredness","_id":"b5d33e4e-a840-419a-861c-b0f736f65db8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":80.0,"_name":"tiredness","_id":"b5d33e4e-a840-419a-861c-b0f736f65db8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":10.0,"_name":"angriness","_id":"c3829671-7611-4a32-a68e-3c60cbcbde20","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":40.0,"_name":"angriness","_id":"c3829671-7611-4a32-a68e-3c60cbcbde20","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":"null","_name":"currentGoal","_id":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231","$type":"NodeCanvas.Framework.Variable`1[[System.String,
@@ -1045,6 +1181,9 @@ MonoBehaviour:
     _references: []
   - _json: '{"_name":"currentTarget","_id":"d5c4bf61-7619-4f39-b621-390c044f95a4","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_value":1.0,"_name":"punchDamage","_id":"a8b5ddcf-e6e1-451d-ad05-44fea312253f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &1270491934
 MonoBehaviour:
@@ -1064,16 +1203,17 @@ MonoBehaviour:
     hunger. Ends when hunger is at 100","$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"thirst","_targetVariableID":"03dc588c-193e-4b61-886e-2bde1f6efacd"},"Operation":1,"valueB":{"_value":20.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Drink","_position":{"x":441.8665,"y":38.7648},"_comment":"replenishes
     thirst. Ends when thirst is at 100","$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"Operation":1,"valueB":{"_value":20.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Rest","_position":{"x":-170.2541,"y":51.18464},"_comment":"replenishes
     tiredness. Ends when tiredness is at 100","$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"hunger":{"_name":"hunger","_targetVariableID":"456e864d-c919-44d6-ba5d-2b21a0d4bbce"},"thirst":{"_name":"thirst","_targetVariableID":"03dc588c-193e-4b61-886e-2bde1f6efacd"},"tiredness":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"angriness":{"_name":"angriness","_targetVariableID":"c3829671-7611-4a32-a68e-3c60cbcbde20"},"currentGoal":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"$type":"NodeCanvas.Tasks.Actions.DetermineGoal"}]},"_position":{"x":336.3701,"y":-447.8707},"_comment":"determine
-    what goal is active","$type":"NodeCanvas.StateMachines.OnFSMUpdate"},{"_position":{"x":-287.8695,"y":-319.8621},"$type":"NodeCanvas.StateMachines.AnyState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Dancing","_position":{"x":-244.1725,"y":-154.4873},"_comment":"dances
-    when everything else is good","$type":"NodeCanvas.StateMachines.ActionState","$id":"6"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"angriness","_targetVariableID":"c3829671-7611-4a32-a68e-3c60cbcbde20"},"Operation":2,"valueB":{"_value":5.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Fighting","_position":{"x":-536.3694,"y":-218.3061},"_comment":"attacks
-    and moves towards enemy. Ends when tiredness is below 30","$type":"NodeCanvas.StateMachines.ActionState","$id":"7"},{"_position":{"x":-18.81699,"y":-334.7204},"$type":"NodeCanvas.StateMachines.AnyState","$id":"8"}],"connections":[{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Eat"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Drink"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Rest"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Eat"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"hunger","_targetVariableID":"456e864d-c919-44d6-ba5d-2b21a0d4bbce"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Drink"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"thirst","_targetVariableID":"03dc588c-193e-4b61-886e-2bde1f6efacd"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"valueB":{"_value":"Rest"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Dance"},"$type":"NodeCanvas.Tasks.Conditions.StringContains"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Fight"},"$type":"NodeCanvas.Tasks.Conditions.StringContains"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Dance"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.StringContains"},{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Fight"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.StringContains"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+    what goal is active","$type":"NodeCanvas.StateMachines.OnFSMUpdate"},{"_position":{"x":-397.8843,"y":-391.8718},"$type":"NodeCanvas.StateMachines.AnyState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hunger","_targetVariableID":"456e864d-c919-44d6-ba5d-2b21a0d4bbce"},"Operation":2,"valueB":{"_value":5.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"thirst","_targetVariableID":"03dc588c-193e-4b61-886e-2bde1f6efacd"},"Operation":2,"valueB":{"_value":5.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"Operation":2,"valueB":{"_value":10.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Dancing","_position":{"x":-260.1832,"y":-246.4991},"_comment":"dances
+    when everything else is good","$type":"NodeCanvas.StateMachines.ActionState","$id":"6"},{"_actionList":{"executionMode":1,"actions":[{"currentTarget":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"currentGoal":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"$type":"NodeCanvas.Tasks.Actions.FindCurrentTarget"},{"targetPosition":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"sampleRate":1.0,"sampleRadius":3.0,"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"valueA":{"_name":"angriness","_targetVariableID":"c3829671-7611-4a32-a68e-3c60cbcbde20"},"Operation":2,"valueB":{"_value":0.5},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Fighting","_position":{"x":-599.1522,"y":-265.5752},"_comment":"attacks
+    and moves towards enemy. Ends when tiredness is below 30","$type":"NodeCanvas.StateMachines.ActionState","$id":"7"},{"_actionList":{"actions":[{"damage":{"_name":"punchDamage","_targetVariableID":"a8b5ddcf-e6e1-451d-ad05-44fea312253f"},"currentTarget":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"punchRange":4.0,"$type":"NodeCanvas.Tasks.Actions.Punch"},{"waitTime":{"_value":3.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Punch","_position":{"x":-725.7748,"y":-81.87201},"_comment":"play
+    animation here when it''s ready","$type":"NodeCanvas.StateMachines.ActionState","$id":"8"},{"_position":{"x":-18.81699,"y":-334.7204},"$type":"NodeCanvas.StateMachines.AnyState","$id":"9"}],"connections":[{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":2.0,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Eat"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":2.0,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Drink"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":2.0,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Rest"},"$type":"NodeCanvas.Tasks.Conditions.CheckString"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Eat"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"hunger","_targetVariableID":"456e864d-c919-44d6-ba5d-2b21a0d4bbce"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Drink"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"thirst","_targetVariableID":"03dc588c-193e-4b61-886e-2bde1f6efacd"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"valueB":{"_value":"Rest"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"valueA":{"_name":"tiredness","_targetVariableID":"b5d33e4e-a840-419a-861c-b0f736f65db8"},"checkType":1,"valueB":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Dance"},"$type":"NodeCanvas.Tasks.Conditions.StringContains"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Fight"},"$type":"NodeCanvas.Tasks.Conditions.StringContains"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"valueB":{"_value":"Dance"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckString"},{"timerStartValue":5.0,"$type":"NodeCanvas.Tasks.Conditions.DanceSwitchDelay"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":4.0,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":2.0,"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Dance"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.StringContains"},{"targetString":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"checkString":{"_value":"Fight"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.StringContains"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences: []
   _boundGraphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 232, y: 436}
-    _zoomFactor: 0.8753732
+    _translation: {x: 462, y: 400}
+    _zoomFactor: 0.545882
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -1118,6 +1258,7 @@ Transform:
   - {fileID: 837964910}
   - {fileID: 1970659528}
   - {fileID: 1484038634}
+  - {fileID: 500157173}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1277911908
@@ -1133,7 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
-  m_CollectObjects: 0
+  m_CollectObjects: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
@@ -1474,7 +1615,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 75def938be53fa24489abdfa4ec3f702, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1632,6 +1773,6 @@ SceneRoots:
   - {fileID: 299914991}
   - {fileID: 1270491931}
   - {fileID: 1277911907}
-  - {fileID: 500157173}
   - {fileID: 1044797798}
   - {fileID: 863670485}
+  - {fileID: 889350655}
