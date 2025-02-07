@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Obstacle
   - waypoint
+  - Food
+  - Water
+  - Rest
   layers:
   - Default
   - TransparentFX

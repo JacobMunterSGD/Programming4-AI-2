@@ -1953,7 +1953,7 @@ MonoBehaviour:
   _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"actions":[{"startPoint":{"_name":"startPoint","_targetVariableID":"1cd2dc1d-982e-4a83-bc92-35d3b6ff16da"},"$type":"NodeCanvas.Tasks.Actions.ResetPlayerPosition"},{"setTo":1,"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},{"valueA":{"_name":"score","_targetVariableID":"253f131c-a649-46e1-9dd0-39625c66f8a7"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"text":2,"score":{},"$type":"NodeCanvas.Tasks.Actions.UpdateTextAT"},{"$type":"NodeCanvas.Tasks.Actions.FadeIn"},{"valueA":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"valueB":{"_name":"startMoveSpeed","_targetVariableID":"7a23ff87-96cd-4bf3-8396-f8a28fa3f085"},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"valueA":{"_name":"moveSpeed","_targetVariableID":"47701539-dae2-4f56-af6c-93bbaaefebfe"},"valueB":{"_name":"startMoveSpeed","_targetVariableID":"7a23ff87-96cd-4bf3-8396-f8a28fa3f085"},"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Reset
     Game","_position":{"x":-97.91902,"y":-400.3359},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"setTo":0,"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},{"boolVariable":{"_name":"inGame","_targetVariableID":"c0bb7adc-7148-4812-8393-fa20df04f02d"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Game
-    Setup","_position":{"x":163.7663,"y":-193.3459},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_nestedFSM":{"_value":3},"_name":"In
+    Setup","_position":{"x":161.0986,"y":-184.009},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_nestedFSM":{"_value":3},"_name":"In
     Game","_position":{"x":336.1299,"y":-34.50068},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"fadeTime":3.0,"$type":"NodeCanvas.Tasks.Actions.FadeOut"},{"log":{"_value":"Lost
     Game"},"labelYOffset":3.0,"secondsToRun":3.0,"verboseMode":2,"finishStatus":0,"$type":"NodeCanvas.Tasks.Actions.DebugLogText"},{"boolVariable":{"_name":"inGame","_targetVariableID":"c0bb7adc-7148-4812-8393-fa20df04f02d"},"setTo":0,"$type":"NodeCanvas.Tasks.Actions.SetBoolean"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Just
     Lost","_position":{"x":-269.595,"y":-168.66},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_conditionList":{"conditions":[{"valueA":{"_name":"inGame","_targetVariableID":"c0bb7adc-7148-4812-8393-fa20df04f02d"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[System.Boolean,
@@ -1968,8 +1968,8 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 328, y: 401}
-    _zoomFactor: 0.56915027
+    _translation: {x: 517, y: 465}
+    _zoomFactor: 0.74971503
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0

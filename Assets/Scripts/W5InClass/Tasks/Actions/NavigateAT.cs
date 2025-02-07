@@ -22,6 +22,11 @@ namespace NodeCanvas.Tasks.Actions {
 			return null;
 		}
 
+        protected override void OnExecute()
+        {
+			timeSinceLastSample = sampleRate;
+        }
+
         protected override void OnUpdate()
         {
 			timeSinceLastSample += Time.deltaTime;
@@ -36,6 +41,8 @@ namespace NodeCanvas.Tasks.Actions {
 					navAgent.SetDestination(hitInfo.position);
 				}
 			}
+
+			EndAction(true);
         }
 
     }
