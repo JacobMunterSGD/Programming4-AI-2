@@ -11,7 +11,6 @@ namespace NodeCanvas.Tasks.Conditions {
 		public float timerStartValue;
 
 		protected override string OnInit(){
-            timer = timerStartValue;
             return null;
 		}
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace NodeCanvas.Tasks.Actions {
 
-	public class FindCurrentTarget : ActionTask {
+	public class FindCurrentTargetAT : ActionTask {
 
 		public BBParameter<Transform> currentTarget;
 		public BBParameter<string> currentGoal;
