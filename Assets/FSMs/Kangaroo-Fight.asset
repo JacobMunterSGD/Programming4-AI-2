@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Kangaroo-Fight
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"actions":[{"currentTarget":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"currentGoal":{"_name":"currentGoal","_targetVariableID":"7e1d0c6a-2e2a-49a7-97ce-b7a367e42231"},"$type":"NodeCanvas.Tasks.Actions.FindCurrentTargetAT"},{"targetPosition":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"sampleRate":1.0,"sampleRadius":3.0,"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"valueA":{"_name":"angriness","_targetVariableID":"c3829671-7611-4a32-a68e-3c60cbcbde20"},"Operation":2,"valueB":{"_value":0.5},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"punchCooldown","_targetVariableID":"3933ba92-3be1-464d-b8a7-be26311595a7"},"Operation":2,"valueB":{"_value":1.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_repeatStateActions":true,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Move
+    To Target","_position":{"x":417.0,"y":214.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"actions":[{"damage":{"_name":"punchDamage","_targetVariableID":"a8b5ddcf-e6e1-451d-ad05-44fea312253f"},"currentTarget":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"punchRange":{"_name":"punchRange","_targetVariableID":"866cb202-2044-4495-a511-7a64a12c6fdd"},"$type":"NodeCanvas.Tasks.Actions.Punch"},{"valueA":{"_name":"punchCooldown","_targetVariableID":"3933ba92-3be1-464d-b8a7-be26311595a7"},"valueB":{"_value":3.0},"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_transitionEvaluation":1,"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Punch","_position":{"x":309.2924,"y":414.6118},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"conditions":[{"currentGoal":{"_name":"currentTarget","_targetVariableID":"d5c4bf61-7619-4f39-b621-390c044f95a4"},"minDistanceToTrigger":{"_name":"punchRange","_targetVariableID":"866cb202-2044-4495-a511-7a64a12c6fdd"},"$type":"NodeCanvas.Tasks.Conditions.ArrivedAtCurrentGoal"},{"valueA":{"_name":"punchCooldown","_targetVariableID":"3933ba92-3be1-464d-b8a7-be26311595a7"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: 106.357956, y: -98.13594}
+    _zoomFactor: 1
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}

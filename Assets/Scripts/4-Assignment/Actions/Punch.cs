@@ -8,7 +8,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 		public BBParameter<float> damage;
 		public BBParameter<Transform> currentTarget;
-		public float punchRange;
+		public BBParameter<float> punchRange;
 
 
         protected override string OnInit() {
@@ -19,7 +19,7 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-            if ((agent.transform.position - currentTarget.value.position).magnitude < punchRange)
+            if ((agent.transform.position - currentTarget.value.position).magnitude < punchRange.value)
             {
                 currentTarget.value.gameObject.GetComponent<Health>().health -= damage.value;
             }

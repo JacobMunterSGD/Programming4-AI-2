@@ -7,7 +7,7 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class ArrivedAtCurrentGoal : ConditionTask {
 
 		public BBParameter<Transform> currentGoal;
-		public float minDistanceToTrigger;
+		public BBParameter<float> minDistanceToTrigger;
 
 		protected override string OnInit(){
 
@@ -21,7 +21,7 @@ namespace NodeCanvas.Tasks.Conditions {
 				return false;
 			}
 
-			if ((currentGoal.value.position - agent.transform.position).magnitude < minDistanceToTrigger)
+			if ((currentGoal.value.position - agent.transform.position).magnitude < minDistanceToTrigger.value)
 			{
                 return true;
 			}
