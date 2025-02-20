@@ -13,7 +13,7 @@ public class ClickToMove : MonoBehaviour
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(mouseRay, out RaycastHit hitInfo))
+            if (Physics.Raycast(mouseRay, out RaycastHit hitInfo) && navAgent.enabled)
             {
                 navAgent.SetDestination(hitInfo.point);
             }

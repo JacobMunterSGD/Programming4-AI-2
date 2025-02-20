@@ -9,6 +9,7 @@ TagManager:
   - Food
   - Water
   - Rest
+  - Entity
   layers:
   - Default
   - TransparentFX

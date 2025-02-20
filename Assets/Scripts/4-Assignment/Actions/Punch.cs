@@ -1,6 +1,7 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace NodeCanvas.Tasks.Actions {
 
@@ -21,10 +22,17 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnExecute() {
             if ((agent.transform.position - currentTarget.value.position).magnitude < punchRange.value)
             {
-                currentTarget.value.gameObject.GetComponent<Health>().health -= damage.value;
+                // subtract health
+                currentTarget.value.gameObject.GetComponent<Health>().health -= damage.value; 
+
+				// deal force in direction punched
 				Vector3 targetPosition = currentTarget.value.gameObject.GetComponent<Transform>().position;
 				targetPosition += agent.transform.forward * punchForce.value;
 				currentTarget.value.gameObject.GetComponent<Rigidbody>().AddForce(targetPosition, ForceMode.Impulse);
+
+				// temporarily turn off the targets nav mesh (simulate them being "stunned")
+				currentTarget.value.gameObject.GetComponent<PlayerHurt>().JustBeenHit();
+
             }
             EndAction(true);
 		}
