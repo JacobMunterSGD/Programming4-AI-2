@@ -9,7 +9,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> damage;
 		public BBParameter<Transform> currentTarget;
 		public BBParameter<float> punchRange;
-
+        public BBParameter<float> punchForce;
 
         protected override string OnInit() {
 			return null;
@@ -22,6 +22,9 @@ namespace NodeCanvas.Tasks.Actions {
             if ((agent.transform.position - currentTarget.value.position).magnitude < punchRange.value)
             {
                 currentTarget.value.gameObject.GetComponent<Health>().health -= damage.value;
+				Vector3 targetPosition = currentTarget.value.gameObject.GetComponent<Transform>().position;
+				targetPosition += agent.transform.forward * punchForce.value;
+				currentTarget.value.gameObject.GetComponent<Rigidbody>().AddForce(targetPosition, ForceMode.Impulse);
             }
             EndAction(true);
 		}
