@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     float hitCooldown;
 
     public float angrinessGivenOnAttack;
+    public float damageGivenOnAttack;
 
     Animator animator;
 
@@ -32,7 +33,7 @@ public class PlayerAttack : MonoBehaviour
         {
             hitCooldown = hitCooldownStartTime;
             kangaroo.GetComponent<Blackboard>().GetVariable<float>("angriness").value += angrinessGivenOnAttack;
-			kangaroo.GetComponent<Blackboard>().GetVariable<float>("damageTaken").value += 30;
+			kangaroo.GetComponent<Blackboard>().GetVariable<float>("damageTaken").value += damageGivenOnAttack;
 			animator.Play("Base Layer.PlayerAttack");
         }
         else

@@ -10,26 +10,29 @@ namespace NodeCanvas.Tasks.Actions {
 
 		public BBParameter<float> damageTaken;
 		public MeshRenderer kangarooMeshRenderer;
-		Material startingMaterial;
+		float startingRValue;
+		float currentRvalue;
 
 		protected override string OnInit()
 		{
-			startingMaterial = kangarooMeshRenderer.material;
+			startingRValue = kangarooMeshRenderer.material.color.r;
 			return null;
 		}
 
 		protected override void OnExecute()
 		{
-			kangarooMeshRenderer.material.color = new Color(startingMaterial.color.r + damageTaken.value, startingMaterial.color.g, startingMaterial.color.b);
-			//Debug.Log(kangarooMeshRenderer.material.color);
-			EndAction(true);
+			
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate()
 		{
 
-			
+			currentRvalue = startingRValue + (damageTaken.value * 100 / 255);
+			Color currentColor = new Color(currentRvalue, kangarooMeshRenderer.material.color.g, kangarooMeshRenderer.material.color.b);
+			kangarooMeshRenderer.material.color = currentColor;
+			Debug.Log(currentRvalue);
+			EndAction(true);
 
 		}
 	}
