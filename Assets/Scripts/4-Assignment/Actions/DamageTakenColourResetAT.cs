@@ -3,8 +3,9 @@ using ParadoxNotion.Design;
 using ParadoxNotion.Serialization.FullSerializer;
 using UnityEngine;
 
-
 namespace NodeCanvas.Tasks.Actions {
+
+	// This script sets the color of the kangaroos material every frame its run
 
 	public class DamageTakenColourResetAT : ActionTask {
 
@@ -21,19 +22,10 @@ namespace NodeCanvas.Tasks.Actions {
 
 		protected override void OnExecute()
 		{
-			
-		}
-
-		//Called once per frame while the action is active.
-		protected override void OnUpdate()
-		{
-
-			currentRvalue = startingRValue + (damageTaken.value * 100 / 255);
+			currentRvalue = startingRValue + (damageTaken.value / 255);
 			Color currentColor = new Color(currentRvalue, kangarooMeshRenderer.material.color.g, kangarooMeshRenderer.material.color.b);
 			kangarooMeshRenderer.material.color = currentColor;
-			Debug.Log(currentRvalue);
 			EndAction(true);
-
 		}
 	}
 }
