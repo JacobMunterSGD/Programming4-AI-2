@@ -8,18 +8,21 @@ public class PlayerAttack : MonoBehaviour
 {
 
     GameObject kangaroo; // this would be replaced with a "closest entity" variable in the future so
-                         // the player could interact with a number of entities, but for now its simpler
-                         // that to just reference the Kangaroo directly
+                         // the player could interact with any number of entities in the scene, but for now its simpler
+                         // to just reference the Kangaroo directly
 
     public float hitCooldownStartTime;
     float hitCooldown;
 
     public float angrinessGivenOnAttack;
 
+    Animator animator;
+
     void Start()
     {
         kangaroo = GameObject.FindGameObjectWithTag("Entity");
-        hitCooldown = hitCooldownStartTime;
+        hitCooldown = 0;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -27,9 +30,10 @@ public class PlayerAttack : MonoBehaviour
 
         if (hitCooldown < 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            print(kangaroo.GetComponent<Blackboard>().GetVariable<float>("angriness").value);
             hitCooldown = hitCooldownStartTime;
             kangaroo.GetComponent<Blackboard>().GetVariable<float>("angriness").value += angrinessGivenOnAttack;
+			kangaroo.GetComponent<Blackboard>().GetVariable<float>("damageTaken").value += 30;
+			animator.Play("Base Layer.PlayerAttack");
         }
         else
         {
