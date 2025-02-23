@@ -25,6 +25,7 @@ public class PlayerHurt : MonoBehaviour
     public void JustBeenHit()
     {
         stunCooldown = stunDuration;
-        navMeshAgent.enabled = false;
+        if (navMeshAgent.enabled) navMeshAgent.ResetPath();
+		navMeshAgent.enabled = false;
     }
 }

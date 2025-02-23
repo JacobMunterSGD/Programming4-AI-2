@@ -17,6 +17,8 @@ public class PlayerAttack : MonoBehaviour
     public float angrinessGivenOnAttack;
     public float damageGivenOnAttack;
 
+    public float attackRange;
+
     Animator animator;
 
     void Start()
@@ -27,14 +29,21 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void Update()
-    {
+    {  
 
-        if (hitCooldown < 0 && Input.GetKeyDown(KeyCode.Space))
+        if (hitCooldown < 0 && Input.GetKeyDown(KeyCode.Space)) // cooldown hasn't run out, and pressing space
         {
             hitCooldown = hitCooldownStartTime;
-            kangaroo.GetComponent<Blackboard>().GetVariable<float>("angriness").value += angrinessGivenOnAttack;
-			kangaroo.GetComponent<Blackboard>().GetVariable<float>("damageTaken").value += damageGivenOnAttack;
 			animator.Play("Base Layer.PlayerAttack");
+
+			float distanceTokangaroo = Vector3.Distance(kangaroo.transform.position, transform.position);
+
+			if (distanceTokangaroo < attackRange) // player is within range
+            {
+				kangaroo.GetComponent<Blackboard>().GetVariable<float>("angriness").value += angrinessGivenOnAttack;
+				kangaroo.GetComponent<Blackboard>().GetVariable<float>("damageTaken").value += damageGivenOnAttack;
+			}			
+			
         }
         else
         {

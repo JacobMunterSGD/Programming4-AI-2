@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace NodeCanvas.Tasks.Actions {
 
-	public class DetermineGoal : ActionTask {
+	public class DetermineGoalAT : ActionTask {
 
 		public BBParameter<float> hunger;
         public BBParameter<float> thirst;
