@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {  
-
+        if (kangaroo == null) kangaroo = GameObject.FindGameObjectWithTag("Entity");
         if (hitCooldown < 0 && Input.GetKeyDown(KeyCode.Space)) // cooldown hasn't run out, and pressing space
         {
             hitCooldown = hitCooldownStartTime;
